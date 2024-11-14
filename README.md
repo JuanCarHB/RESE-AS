@@ -17,20 +17,18 @@ Este proyecto es una página web que presenta una colección de reseñas de libr
 2. Mujercitas
 3. 100 años de soledad
 4. Pedro Páramo
-5. Los de abajo
-6. Marianela
-7. Frankenstein
-8. El retrato de Dorian Gray
-9. Rayuela
-10. La vida secreta de las abejas
-11. Un árbol crece en Brooklyn
-12. Cantares de Vida y Esperanza
-13. La ciudad y sus muros inciertos
-14. La Vegetariana
-15. El cuervo
-16. Matar a un ruiseñor
-17. El extranjero
-18. Los Miserables
-19. 1984
+5. Frankenstein
+6. Drácula
+7. Rayuela
+8. La vida secreta de las abejas
+9. Un árbol crece en Brooklyn
+10. Cantos de Vida y Esperanza
+11. Marianela
+12. La Vegetariana
+13. El Cuervo
+14. Matar a un ruiseñor
+15. El extranjero
+16. Los Miserables
+17. 1984
 
 
