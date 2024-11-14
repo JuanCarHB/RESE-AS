@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perderse en un buen libro</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1e1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #eb9752;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 2.5rem;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contenedor de las páginas del libro */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 10%;
+        }
+
+        /* Diseño de la "página" */
+        .book {
+            background: #fff;
+            width: 280px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        /* Imagen de la portada del libro */
+        .book-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .book-content {
+            padding: 20px;
+        }
+
+        /* Título del libro */
+        .book-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #7e5a3c;
+        }
+
+        /* Reseña del libro */
+        .book-review {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Cita relevante del libro */
+        .book-quote {
+            font-style: italic;
+            color: #7e5a3c;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Formulario de sugerencias */
+        .form-section {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-section button {
+            background-color: #7e5a3c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: #5b3f2d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #7e5a3c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Perderse en un buen libro es encontrar un tesoro de historias</h1>
+    </header>
+
+    <!-- Contenedor de libros -->
+    <div class="book-container">
+        <!-- Cumbres Borrascosas -->
+        <div class="book">
+            <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/85/16/8516d825f44f192528d673955df2bc99.jpg" alt="Cumbres Borrascosas" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Cumbres Borrascosas</div>
+                <p class="book-review">
+                    Emily Brontë nos lleva a los paisajes desolados de Yorkshire, donde la pasión y el odio se entrelazan
+                    de forma inquebrantable. Un clásico que explora los límites del amor y la venganza.
+                </p>
+                <div class="book-quote">
+                    "Si todo lo que he hecho ha sido mal, al menos que me quede el consuelo de que he amado mucho."
+                </div>
+            </div>
+        </div>
+
+        <!-- Mujercitas -->
+        <div class="book">
+            <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/d5/29/d529d8a4aadeeb30538b5fe7adb4a289.jpg" alt="Mujercitas" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Mujercitas</div>
+                <p class="book-review">
+                    Louisa May Alcott ofrece una reflexión sobre los sueños, las dificultades y el poder del amor 
+                    familiar en esta entrañable novela sobre las hermanas March.
+                </p>
+                <div class="book-quote">
+                    "Lo que quiero es hacer algo que sea realmente útil; que me haga sentir que he hecho algo por los demás."
+                </div>
+            </div>
+        </div>
+
+        <!-- 100 años de soledad -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/91TvVQS7loL._AC_UF1000,1000_QL80_.jpg" alt="Cien años de soledad" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Cien años de soledad</div>
+                <p class="book-review">
+                    La obra maestra de Gabriel García Márquez nos sumerge en el mágico y trágico mundo de Macondo, 
+                    explorando el amor, el destino y la historia a través de generaciones de la familia Buendía.
+                </p>
+                <div class="book-quote">
+                    "La vida no es la que uno vivió, sino la que uno recuerda y cómo la recuerda para contarla."
+                </div>
+            </div>
+        </div>
+
+        <!-- Pedro Páramo -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/8157nWhA7VL._AC_UF1000,1000_QL80_.jpg" alt="Pedro Páramo" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Pedro Páramo</div>
+                <p class="book-review">
+                    Juan Rulfo presenta una narración profunda sobre el México rural y los fantasmas del pasado. 
+                    Una obra que cuestiona la realidad y la memoria en un contexto lleno de dolor y desesperanza.
+                </p>
+                <div class="book-quote">
+                    "Vine a Comala porque me dijeron que aquí vivía mi padre, un tal Pedro Páramo."
+                </div>
+            </div>
+        </div>
+
+        <!-- Frankenstein -->
+        <div class="book">
+            <img src="https://i.pinimg.com/736x/f4/33/9f/f4339fbfa0cfdbaba93ce08cbec0250d.jpg" alt="Frankenstein" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Frankenstein</div>
+                <p class="book-review">
+                    La novela de Mary Shelley explora los límites de la moralidad humana, la ciencia y la creación,
+                    mientras nos introduce en la trágica historia de Victor Frankenstein y su monstruosa creación.
+                </p>
+                <div class="book-quote">
+                    "Nada es tan terrible como la ignorancia."
+                </div>
+            </div>
+        </div>
+
+        <!-- Drácula -->
+        <div class="book">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmDx5WFyt3wHqsisQST_6lSST0QDNACaXTwS0BoZ3mYm7vYpubcwj1BB3fuXmYVFtQHdaE_3IYbZ68J6ugmxAbqexpmG31PqitILCQuBa7tKIxY0SGyJv_WtrTcsGqgrhPz_Bh2MxpiTP/s1600/dracul.jpg" alt="Drácula" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Drácula</div>
+                <p class="book-review">
+                    Bram Stoker nos presenta la historia de uno de los villanos más icónicos de la literatura. 
+                    Una novela que explora el terror, el deseo y el poder en un relato fascinante sobre el vampirismo.
+                </p>
+                <div class="book-quote">
+                    "El monstruo se encuentra más cerca de lo que creemos."
+                </div>
+            </div>
+        </div>
+
+        <!-- Rayuela -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/61Hje5q9CRL._AC_UF1000,1000_QL80_.jpg" alt="Rayuela" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Rayuela</div>
+                <p class="book-review">
+                    Julio Cortázar juega con la estructura narrativa en esta novela que explora el amor, la locura 
+                    y la búsqueda del sentido de la vida a través de la historia de Horacio Oliveira.
+                </p>
+                <div class="book-quote">
+                    "Y así fue como le pasó lo que le pasa a todo el mundo: que se fue quedando solo."
+                </div>
+            </div>
+        </div>
+
+        <!-- La vida secreta de las abejas -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/81gDXpWMsbL._UF894,1000_QL80_.jpg" alt="La vida secreta de las abejas" class="book-img">
+            <div class="book-content">
+                <div class="book-title">La vida secreta de las abejas</div>
+                <p class="book-review">
+                    Sue Monk Kidd narra la historia de una niña que busca respuestas sobre su madre y su propio 
+                    lugar en el mundo, en una novela sobre el racismo, la maternidad y el perdón.
+                </p>
+                <div class="book-quote">
+                    "Las abejas saben mucho sobre la vida. Son pacientes, organizadas, inteligentes."
+                </div>
+            </div>
+        </div>
+
+        <!-- Un árbol crece en Brooklyn -->
+        <div class="book">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_650745-MLM54135754804_032023-O.webp" alt="Un árbol crece en Brooklyn" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Un árbol crece en Brooklyn</div>
+                <p class="book-review">
+                    Betty Smith nos ofrece una historia conmovedora sobre la lucha por los sueños en una familia 
+                    pobre de Brooklyn, explorando temas de esperanza, sacrificio y perseverancia.
+                </p>
+                <div class="book-quote">
+                    "Nunca dejes que nadie te diga que no puedes hacer algo."
+                </div>
+            </div>
+        </div>
+
+        <!-- Cantares de Vida y Esperanza -->
+        <div class="book">
+            <img src="https://i0.wp.com/aullidolit.com/wp-content/uploads/2022/02/Cantos-de-vida-y-esperanza.jpg?ssl=1" alt="Cantares de Vida y Esperanza" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Cantos de Vida y Esperanza</div>
+                <p class="book-review">
+                    Rubén Darío nos lleva a la reflexión con esta colección de versos que exploran la lucha por la libertad,
+                    la belleza de la vida y la esperanza en medio de la adversidad.
+                </p>
+                <div class="book-quote">
+                    "El futuro es de los audaces."
+                </div>
+            </div>
+        </div>
+
+        <!-- Marianela -->
+        <div class="book">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzFCH_MK19BMmKikVs-q2w4VD8pr-w8V033Q&s" alt="La ciudad y sus muros inciertos" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Marianela</div>
+                <p class="book-review">
+                    Marianela es una novela conmovedora que explora los límites del amor y la belleza interior. En la historia, Marianela es una joven huérfana y pobre que, a pesar de su físico frágil y su vida marcada por la adversidad, brilla por su bondad y su profundo amor por Pablo, un joven ciego.
+                </p>
+                <div class="book-quote">
+                    "No es la ceguera lo que más me pesa, sino la falta de amor."
+                </div>
+            </div>
+        </div>
+
+        <!-- La Vegetariana -->
+        <div class="book">
+            <img src="https://media.vozpopuli.com/2024/10/HAN-PORTADAS-1-1024x576.jpg" alt="La Vegetariana" class="book-img">
+            <div class="book-content">
+                <div class="book-title">La Vegetariana</div>
+                <p class="book-review">
+                    Han Kang ofrece una reflexión profunda sobre la alienación, la identidad y el deseo de escapar 
+                    de una vida que no se puede controlar a través de la historia de Yeong-hye.
+                </p>
+                <div class="book-quote">
+                    "El cuerpo es solo una cárcel, una prisión que no tiene salida."
+                </div>
+            </div>
+        </div>
+
+        <!-- El Cuervo -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/61X5JJXzwwL._AC_UF1000,1000_QL80_.jpg" alt="El Cuervo" class="book-img">
+            <div class="book-content">
+                <div class="book-title">El Cuervo</div>
+                <p class="book-review">
+                    Edgar Allan Poe nos presenta uno de los poemas más célebres de la literatura universal, lleno de 
+                    melancolía, misterio y la eterna lucha del hombre con la muerte.
+                </p>
+                <div class="book-quote">
+                    "Nunca más."
+                </div>
+            </div>
+        </div>
+
+        <!-- Matar a un ruiseñor -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/71EqZnXaNoL._AC_UF1000,1000_QL80_.jpg" alt="Matar a un ruiseñor" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Matar a un ruiseñor</div>
+                <p class="book-review">
+                    Harper Lee explora temas como la justicia, el racismo y la moralidad a través de los ojos de Scout 
+                    Finch, una niña que enfrenta los problemas más difíciles de la vida en el sur de Estados Unidos.
+                </p>
+                <div class="book-quote">
+                    "Es un pecado matar a un ruiseñor."
+                </div>
+            </div>
+        </div>
+
+        <!-- El extranjero -->
+        <div class="book">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzjqaQayumJri8ESurepQPCmaqAN6dmoJcEQ&s" alt="El extranjero" class="book-img">
+            <div class="book-content">
+                <div class="book-title">El extranjero</div>
+                <p class="book-review">
+                    Albert Camus nos presenta la historia de Meursault, un hombre alienado de la sociedad que enfrenta 
+                    su condena en un mundo absurdo e indiferente.
+                </p>
+                <div class="book-quote">
+                    "Hoy ha muerto mamá. O quizá ayer, no sé."
+                </div>
+            </div>
+        </div>
+
+        <!-- Los Miserables -->
+        <div class="book">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMz-m01TrL4jeh0rl36-nP0fhq2zdOx4zQPQ&s" alt="Los Miserables" class="book-img">
+            <div class="book-content">
+                <div class="book-title">Los Miserables</div>
+                <p class="book-review">
+                    Victor Hugo crea una de las novelas más emblemáticas de la historia literaria, donde el destino de 
+                    sus personajes está marcado por la lucha contra la injusticia, la pobreza y la redención.
+                </p>
+                <div class="book-quote">
+                    "Ser pobre no es una vergüenza, lo vergonzoso es no luchar contra la pobreza."
+                </div>
+            </div>
+        </div>
+
+        <!-- 1984 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/71y7ZGtN1CL._AC_UF1000,1000_QL80_.jpg" alt="1984" class="book-img">
+            <div class="book-content">
+                <div class="book-title">1984</div>
+                <p class="book-review">
+                    George Orwell nos presenta una aterradora visión del futuro en la que un gobierno totalitario 
+                    vigila cada aspecto de nuestras vidas y anula nuestra libertad más básica.
+                </p>
+                <div class="book-quote">
+                    "La guerra es paz. La libertad es esclavitud. La ignorancia es fuerza."
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de sugerencias -->
+    <div class="form-section">
+        <h2>¡Sugiérenos más libros!</h2>
+        <p>Si tienes un libro clásico que quisieras ver reseñado aquí, ¡nos encantaría saberlo!</p>
+        <form>
+            <input type="text" name="book-title" placeholder="Título del libro" required>
+            <textarea name="book-review" rows="4" placeholder="Deja tu reseña (opcional)" required></textarea>
+            <button type="submit">Enviar sugerencia</button>
+        </form>
+    </div>
+
+</body>
+</html>
